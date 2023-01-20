@@ -2,6 +2,8 @@
 /lib/
 /test/
 .idea/
+target/
+dist/
 custom-elements.json
 # top level source
 my-element.js
