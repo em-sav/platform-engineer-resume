@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "../shared/r-section-title";
 export declare class RSkills extends LitElement {
     static styles: import("lit").CSSResult;
@@ -6,7 +6,7 @@ export declare class RSkills extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-skills': RSkills;
+        "r-skills": RSkills;
     }
 }
 //# sourceMappingURL=r-skills.d.ts.map

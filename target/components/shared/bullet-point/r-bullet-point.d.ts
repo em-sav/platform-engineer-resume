@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "./r-bullet-point-item";
 export declare class RBulletPoint extends LitElement {
     static styles: import("lit").CSSResult;
@@ -6,7 +6,7 @@ export declare class RBulletPoint extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-bullet-point': RBulletPoint;
+        "r-bullet-point": RBulletPoint;
     }
 }
 //# sourceMappingURL=r-bullet-point.d.ts.map

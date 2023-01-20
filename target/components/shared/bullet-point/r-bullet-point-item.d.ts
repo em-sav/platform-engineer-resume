@@ -10,7 +10,7 @@ export declare class RBulletPointItem extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-bullet-point-item': RBulletPointItem;
+        "r-bullet-point-item": RBulletPointItem;
     }
 }
 //# sourceMappingURL=r-bullet-point-item.d.ts.map

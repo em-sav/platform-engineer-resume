@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "../shared/bullet-point/r-bullet-point-item";
 import "../shared/r-section-title";
 export declare class RExperience extends LitElement {
@@ -7,7 +7,7 @@ export declare class RExperience extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-experience': RExperience;
+        "r-experience": RExperience;
     }
 }
 //# sourceMappingURL=r-experience.d.ts.map

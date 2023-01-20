@@ -1,49 +1,47 @@
-import {LitElement, html, css} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
-import {map} from 'lit/directives/map.js';
-import "./r-contact-item"
+import { css, html, LitElement } from "lit";
+import { customElement } from "lit/decorators.js";
+import { map } from "lit/directives/map.js";
+import "./r-contact-item";
 
 const contactItems = [
-    {
-        value: "emile.savard.21@gmail.com",
-        path: "../../../assets/mail-enveloppe.svg",
-        href: "mailto:emile.savard.21@gmail.com"
-    },
-    {
-        value: "581-309-7373",
-        path: "../../../assets/call.svg",
-        href: "tel:581-309-7373"
-    },
-    {
-        value: "linkedin",
-        path: "../../../assets/linkedin.svg",
-        href: "https://www.linkedin.com/in/%C3%A9mile-savard-341540192/"
-    }
-]
+  {
+    value: "emile.savard.21@gmail.com",
+    path: "../../../assets/mail-enveloppe.svg",
+    href: "mailto:emile.savard.21@gmail.com"
+  },
+  {
+    value: "581-309-7373",
+    path: "../../../assets/call.svg",
+    href: "tel:581-309-7373"
+  },
+  {
+    value: "linkedin",
+    path: "../../../assets/linkedin.svg",
+    href: "https://www.linkedin.com/in/%C3%A9mile-savard-341540192/"
+  }
+];
 
-
-@customElement('r-contact')
+@customElement("r-contact")
 export class RContact extends LitElement {
-    static override styles = css`
-        :host {
-            display: flex;
-            flex-direction: column;
-        }
+  static override styles = css`
+    :host {
+      display: flex;
+      flex-direction: column;
+    }
   `;
 
-    override render() {
-        return html`
-                ${map(contactItems, (item) =>
-                        html`
-                            <r-contact-item value=${item.value} path=${item.path} href=${item.href}></r-contact-item>
-                        `
-                )}
+  override render() {
+    return html`
+      ${map(
+        contactItems,
+        (item) => html` <r-contact-item value=${item.value} path=${item.path} href=${item.href}></r-contact-item> `
+      )}
     `;
-    }
+  }
 }
 
 declare global {
-    interface HTMLElementTagNameMap {
-        'r-contact': RContact;
-    }
+  interface HTMLElementTagNameMap {
+    "r-contact": RContact;
+  }
 }

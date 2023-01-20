@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "./r-contact-item";
 export declare class RContact extends LitElement {
     static styles: import("lit").CSSResult;
@@ -6,7 +6,7 @@ export declare class RContact extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-contact': RContact;
+        "r-contact": RContact;
     }
 }
 //# sourceMappingURL=r-contact.d.ts.map

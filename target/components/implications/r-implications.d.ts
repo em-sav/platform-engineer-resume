@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "../shared/bullet-point/r-bullet-point-item";
 import "../shared/r-section-title";
 export declare class RImplications extends LitElement {
@@ -7,7 +7,7 @@ export declare class RImplications extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-implications': RImplications;
+        "r-implications": RImplications;
     }
 }
 //# sourceMappingURL=r-implications.d.ts.map

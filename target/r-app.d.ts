@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "./components/title/r-title";
 import "./components/contact/r-contact";
 import "./components/summary/r-summary";
@@ -14,7 +14,7 @@ export declare class RApp extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-app': RApp;
+        "r-app": RApp;
     }
 }
 //# sourceMappingURL=r-app.d.ts.map

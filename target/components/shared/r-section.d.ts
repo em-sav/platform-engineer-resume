@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 import "./r-section-title";
 import "./bullet-point/r-bullet-point";
 export declare class RSection extends LitElement {
@@ -7,7 +7,7 @@ export declare class RSection extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'r-section': RSection;
+        "r-section": RSection;
     }
 }
 //# sourceMappingURL=r-section.d.ts.map
