@@ -12,7 +12,7 @@ let RSkills = class RSkills extends LitElement {
         return html `
       <div class="container">
         <r-section-title> Compétences </r-section-title>
-        <img width="90%" src="../../../assets/skills.png" />
+        <img width="90%" src=${window.location.origin + "/assets/skills.png"} />
       </div>
     `;
     }

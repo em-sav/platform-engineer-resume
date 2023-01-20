@@ -71,7 +71,7 @@ export class RExperience extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Expérience </r-section-title>
-        <img src="../../../assets/beneva.png" class="beneva-logo" height="40px" />
+        <img src=${ window.location.origin + "/assets/beneva.png"} class="beneva-logo" height="40px" />
         <div style="display: flex; align-items: start">
           <div class="container">
             <ul>

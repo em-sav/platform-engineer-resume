@@ -11,17 +11,17 @@ import "./r-contact-item";
 const contactItems = [
     {
         value: "emile.savard.21@gmail.com",
-        path: "../../../assets/mail-enveloppe.svg",
+        path: window.location.origin + "/assets/mail-enveloppe.svg",
         href: "mailto:emile.savard.21@gmail.com"
     },
     {
         value: "581-309-7373",
-        path: "../../../assets/call.svg",
+        path: window.location.origin + "/assets/call.svg",
         href: "tel:581-309-7373"
     },
     {
         value: "linkedin",
-        path: "../../../assets/linkedin.svg",
+        path: window.location.origin + "/assets/linkedin.svg",
         href: "https://www.linkedin.com/in/%C3%A9mile-savard-341540192/"
     }
 ];
