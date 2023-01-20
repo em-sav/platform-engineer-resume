@@ -3,6 +3,7 @@ import { customElement } from "lit/decorators.js";
 import { map } from "lit/directives/map.js";
 import "../shared/bullet-point/r-bullet-point-item";
 import "../shared/r-section-title";
+import { originPath } from "../../global/config";
 
 const experienceItems = [
   {
@@ -71,7 +72,7 @@ export class RExperience extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Expérience </r-section-title>
-        <img src=${ window.location.origin + "/assets/beneva.png"} class="beneva-logo" height="40px" />
+        <img src=${ originPath + "/assets/beneva.png"} class="beneva-logo" height="40px"  alt="beneva"/>
         <div style="display: flex; align-items: start">
           <div class="container">
             <ul>

@@ -31,7 +31,7 @@ export class RApp extends LitElement {
     .copyrights {
       text-align: end;
       font-weight: ${typography.weight.light};
-      margin-top: 5px;
+      margin-top: -14px;
     }
 
     .split-container {
