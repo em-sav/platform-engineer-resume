@@ -1,0 +1,1 @@
+{"version":3,"file":"r-section.d.ts","sourceRoot":"","sources":["../../../src/components/shared/r-section.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,UAAU,EAAY,MAAM,KAAK,CAAC;AAE1C,OAAO,mBAAmB,CAAA;AAC1B,OAAO,+BAA+B,CAAA;AAEtC,qBACa,QAAS,SAAQ,UAAU;IACpC,OAAgB,MAAM,0BAUtB;IAES,MAAM;CAUlB;AAED,OAAO,CAAC,MAAM,CAAC;IACX,UAAU,qBAAqB;QAC3B,WAAW,EAAE,QAAQ,CAAC;KACzB;CACJ"}

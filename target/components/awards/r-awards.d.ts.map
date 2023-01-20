@@ -1,0 +1,1 @@
+{"version":3,"file":"r-awards.d.ts","sourceRoot":"","sources":["../../../src/components/awards/r-awards.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,UAAU,EAAY,MAAM,KAAK,CAAC;AAG1C,OAAO,4CAA4C,CAAA;AACnD,OAAO,2BAA2B,CAAA;AAUlC,qBACa,OAAQ,SAAQ,UAAU;IACnC,OAAgB,MAAM,0BAsBtB;IAES,MAAM;CA0BlB;AAED,OAAO,CAAC,MAAM,CAAC;IACX,UAAU,qBAAqB;QAC3B,UAAU,EAAE,OAAO,CAAC;KACvB;CACJ"}
