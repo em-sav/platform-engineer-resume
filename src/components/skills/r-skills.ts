@@ -1,6 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import "../shared/r-section-title";
+import { originPath } from "../../global/config";
 
 @customElement("r-skills")
 export class RSkills extends LitElement {
@@ -19,7 +20,7 @@ export class RSkills extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Compétences </r-section-title>
-        <img width="90%" src=${ window.location.origin + "/assets/skills.png"} />
+        <img width="90%" src=${ originPath + "assets/skills.png"} />
       </div>
     `;
   }

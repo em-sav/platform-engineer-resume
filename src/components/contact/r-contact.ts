@@ -2,22 +2,23 @@ import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 import { map } from "lit/directives/map.js";
 import "./r-contact-item";
+import { originPath } from "../../global/config";
 
 
 const contactItems = [
   {
     value: "emile.savard.21@gmail.com",
-    path: window.location.origin + "/assets/mail-enveloppe.svg",
+    path: originPath + "assets/mail-enveloppe.svg",
     href: "mailto:emile.savard.21@gmail.com"
   },
   {
     value: "581-309-7373",
-    path:  window.location.origin + "/assets/call.svg",
+    path:  originPath + "assets/call.svg",
     href: "tel:581-309-7373"
   },
   {
     value: "linkedin",
-    path:  window.location.origin + "/assets/linkedin.svg",
+    path:  originPath + "assets/linkedin.svg",
     href: "https://www.linkedin.com/in/%C3%A9mile-savard-341540192/"
   }
 ];
