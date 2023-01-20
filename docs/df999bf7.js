@@ -295,7 +295,7 @@ const t=window,e=t.ShadowRoot&&(void 0===t.ShadyCSS||t.ShadyCSS.nativeShadow)&&"
   `,Pt=St([et("r-education")],Pt);var Rt=function(t,e,i,s){var n,r=arguments.length,l=r<3?e:null===s?s=Object.getOwnPropertyDescriptor(e,i):s;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)l=Reflect.decorate(t,e,i,s);else for(var o=t.length-1;o>=0;o--)(n=t[o])&&(l=(r<3?n(l):r>3?n(e,i,l):n(e,i))||l);return r>3&&l&&Object.defineProperty(e,i,l),l};const jt=[{date:"2022-présent",type:"Temps partiel",title:"DevOps",description:"Soutien à la livraison des développeurs"},{date:"Été 2021",type:"Stage",title:"Développeur Java/Cobol",description:"Assurance vie et individuelle"},{date:"Été 2020",type:"Stage",title:"Développeur Powershell/PHP",description:"Sécurité informatique - GIA et SecOff"},{date:"2019-2022",type:"Temps Partiel",title:"Développeur Powershell/PHP",description:"Sécurité informatique - GIA"},{date:"2017-2019",type:"Temps Partiel",title:"Étudiant aux opérations TI",description:"Centre de repographie"}];let Ct=class extends Y{render(){return U`
       <div class="container">
         <r-section-title> Expérience </r-section-title>
-        <img src=${ht+"assets/beneva.png"} class="beneva-logo" height="40px"  alt="beneva"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Beneva_rgb.png" class="beneva-logo" height="40px"  alt="beneva"/>
         <div style="display: flex; align-items: start">
           <div class="container">
             <ul>
