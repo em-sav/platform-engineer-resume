@@ -1,1 +1,0 @@
-{"version":3,"file":"r-section-title.d.ts","sourceRoot":"","sources":["../../../src/components/shared/r-section-title.ts"],"names":[],"mappings":"AAAA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAG5C,qBACa,aAAc,SAAQ,UAAU;IAC3C,OAAgB,MAAM,0BAyBpB;IAEO,MAAM;CAQhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,iBAAiB,EAAE,aAAa,CAAC;KAClC;CACF"}

@@ -8,7 +8,7 @@
     "sourceMap": true,
     "inlineSources": true,
     "outDir": "./target",
-    "rootDir": "./src",
+    "rootDir": "./",
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": true,
@@ -28,7 +28,7 @@
       }
     ]
   },
-  "include": ["src/**/*.ts", "src/assets/*.svg", "index.html"],
+  "include": ["./src/**/*.ts"],
   "exclude": [
     ".git",
     "node_modules"

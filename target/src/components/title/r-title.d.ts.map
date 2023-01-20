@@ -1,0 +1,1 @@
+{"version":3,"file":"r-title.d.ts","sourceRoot":"","sources":["../../../../src/components/title/r-title.ts"],"names":[],"mappings":"AAAA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAG5C,qBACa,MAAO,SAAQ,UAAU;IACpC,OAAgB,MAAM,0BAkCpB;IAEO,MAAM;CAWhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,SAAS,EAAE,MAAM,CAAC;KACnB;CACF"}
