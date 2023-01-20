@@ -20,7 +20,7 @@ export class RSkills extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Compétences </r-section-title>
-        <img width="90%" src="https://emtheskills.github.io/software-engineer-resume/assets/skills.png"} />
+        <img width="90%" src=${originPath() + "assets/skills.png"}  alt="skills"/>
       </div>
     `;
   }
