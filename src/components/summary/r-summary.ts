@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { typography } from "../../global/theme";
+import { palette, typography } from "../../global/theme";
 
 @customElement("r-summary")
 export class ResumeSummary extends LitElement {
@@ -8,13 +8,14 @@ export class ResumeSummary extends LitElement {
     :host {
       display: flex;
       text-align: justify;
+      // color: ${palette.text.main};
       font-weight: ${typography.weight.light};
     }
   `;
 
   override render() {
     return html`
-      <div class="container">
+      <div>
         Ma passion pour les nouvelles technologies ainsi que le soucis de livrer du code de qualité tout en appliquant les bonnes
         pratiques fait de moi un développeur polyvalent et réfléchit
       </div>

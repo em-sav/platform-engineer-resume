@@ -10,6 +10,8 @@ import "./components/implications/r-implications";
 import "./components/skills/r-skills";
 import { typography } from "./global/theme";
 
+const currentYear = new Date().getFullYear();
+
 @customElement("r-app")
 export class RApp extends LitElement {
   static override styles = css`
@@ -111,7 +113,7 @@ export class RApp extends LitElement {
         </div>
         <div class="split-container">
           <r-implications class="middle-spacing responsive reduce-gap fit-column-implications"></r-implications>
-          <div class="responsive copyrights">Copyright © 2023 Émile Savard</div>
+          <div class="responsive copyrights">Copyright © ${currentYear} Émile Savard</div>
         </div>
       </div>
     `;

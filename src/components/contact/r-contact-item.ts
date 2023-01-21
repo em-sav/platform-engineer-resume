@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { typography } from "../../global/theme";
+import { palette, typography } from "../../global/theme";
 
 @customElement("r-contact-item")
 export class RContactItem extends LitElement {
@@ -17,7 +17,7 @@ export class RContactItem extends LitElement {
     }
 
     .contact-item {
-      margin-bottom: 2px;
+      color: ${palette.text.main};
       margin-left: 5px;
       font-weight: ${typography.weight.light};
     }
