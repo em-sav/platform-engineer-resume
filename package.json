@@ -17,7 +17,7 @@
     "lint:eslint": "eslint 'src/**/*.ts'",
     "lint:lit-analyzer": "lit-analyzer",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
-    "docs": "npm run docs:clean && npm run build && npm run docs:build && npm run dist:clean",
+    "docs": "npm run clean && npm run docs:clean && npm run build && npm run docs:build && npm run dist:clean",
     "docs:clean": "rimraf docs",
     "docs:build": "rollup -c rollup.config.js",
     "docs:serve": "wds --root-dir=docs --node-resolve --watch",
