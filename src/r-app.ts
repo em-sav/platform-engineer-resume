@@ -8,7 +8,7 @@ import "./components/experience/r-experience";
 import "./components/awards/r-awards";
 import "./components/implications/r-implications";
 import "./components/skills/r-skills";
-import { typography } from "./global/theme";
+import { palette, typography } from "./global/theme";
 
 const currentYear = new Date().getFullYear();
 
@@ -32,6 +32,7 @@ export class RApp extends LitElement {
     .copyrights {
       text-align: end;
       font-weight: ${typography.weight.light};
+      color: ${palette.text.main};
       margin-top: -14px;
     }
 

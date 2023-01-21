@@ -416,6 +416,7 @@ const t=window,e=t.ShadowRoot&&(void 0===t.ShadyCSS||t.ShadyCSS.nativeShadow)&&"
     .copyrights {
       text-align: end;
       font-weight: ${ct.light};
+      color: ${at.main};
       margin-top: -14px;
     }
 
