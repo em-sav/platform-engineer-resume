@@ -3,7 +3,6 @@ import { customElement } from "lit/decorators.js";
 import "./components/title/r-title";
 import "./components/contact/r-contact";
 import "./components/summary/r-summary";
-import "./components/shared/r-section";
 import "./components/education/r-education";
 import "./components/experience/r-experience";
 import "./components/awards/r-awards";
@@ -110,7 +109,7 @@ export class RApp extends LitElement {
           <r-skills class="middle-spacing responsive fit-column-skills"></r-skills>
           <r-awards class="responsive reduce-gap fit-column-awards"></r-awards>
         </div>
-        <div class="split-container" style>
+        <div class="split-container">
           <r-implications class="middle-spacing responsive reduce-gap fit-column-implications"></r-implications>
           <div class="responsive copyrights">Copyright © 2023 Émile Savard</div>
         </div>

@@ -20,7 +20,7 @@ export class RSkills extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Compétences </r-section-title>
-        <img width="90%" src=${originPath() + "assets/skills.png"}  alt="skills"/>
+        <img width="90%" src=${originPath() + "assets/skills.png"} alt="skills" />
       </div>
     `;
   }

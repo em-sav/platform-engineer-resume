@@ -29,8 +29,5 @@
     ]
   },
   "include": ["./src/**/*.ts"],
-  "exclude": [
-    ".git",
-    "node_modules"
-  ]
+  "exclude": [".git", "node_modules"]
 }

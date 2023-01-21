@@ -4,7 +4,6 @@ import { map } from "lit/directives/map.js";
 import "./r-contact-item";
 import { originPath } from "../../global/config";
 
-
 const contactItems = [
   {
     value: "emile.savard.21@gmail.com",
@@ -13,12 +12,12 @@ const contactItems = [
   },
   {
     value: "581-309-7373",
-    path:  originPath() + "assets/call.svg",
+    path: originPath() + "assets/call.svg",
     href: "tel:581-309-7373"
   },
   {
     value: "linkedin",
-    path:  originPath() + "assets/linkedin.svg",
+    path: originPath() + "assets/linkedin.svg",
     href: "https://www.linkedin.com/in/%C3%A9mile-savard-341540192/"
   }
 ];

@@ -1,4 +1,4 @@
-# LitElement TypeScript starter
+# Software Engineer Resume Template with LitElement and TypeScript
 
 This project includes a sample component using LitElement with TypeScript.
 
