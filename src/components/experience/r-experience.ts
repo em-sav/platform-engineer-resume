@@ -26,13 +26,13 @@ const experienceItems = [
   },
   {
     date: "2019-2022",
-    type: "Temps Partiel",
+    type: "Temps partiel",
     title: "Développeur Powershell/PHP",
     description: "Sécurité informatique - GIA"
   },
   {
     date: "2017-2019",
-    type: "Temps Partiel",
+    type: "Temps partiel",
     title: "Étudiant aux opérations TI",
     description: "Centre de repographie"
   }

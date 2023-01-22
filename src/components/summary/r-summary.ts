@@ -17,7 +17,7 @@ export class ResumeSummary extends LitElement {
     return html`
       <div>
         Ma passion pour les nouvelles technologies ainsi que le soucis de livrer du code de qualité tout en appliquant les bonnes
-        pratiques fait de moi un développeur polyvalent et réfléchit
+        pratiques font de moi un développeur polyvalent et réfléchi
       </div>
     `;
   }

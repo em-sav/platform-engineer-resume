@@ -41,7 +41,7 @@ export class RAwards extends LitElement {
   override render() {
     return html`
       <div class="container">
-        <r-section-title> Récompenses </r-section-title>
+        <r-section-title> Mentions </r-section-title>
         <div style="display: flex; align-items: start">
           <div class="container">
             <ul>

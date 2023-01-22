@@ -89,7 +89,7 @@ export class RBulletPointItem extends LitElement {
                   <span class="timeline-description-title">${this.title}</span>
                   <span class="timeline-description-title">${this.date}</span>
                 </div>
-                <span style="font-weight: ${typography.weight.light}; text-align: justify;">${this.subTitle}</span>
+                <span style="font-weight: ${typography.weight.light}; text-align: start;">${this.subTitle}</span>
               </div>
             `
           : html`
@@ -100,7 +100,7 @@ export class RBulletPointItem extends LitElement {
                 </div>
                 <div class="section right-part">
                   <span class="timeline-description-title">${this.title}</span>
-                  <span style="font-weight: ${typography.weight.light}; text-align: justify;">${this.subTitle}</span>
+                  <span style="font-weight: ${typography.weight.light}; text-align: start;">${this.subTitle}</span>
                 </div>
               </div>
             `}

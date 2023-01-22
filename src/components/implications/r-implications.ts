@@ -8,7 +8,7 @@ const educationItems = [
   {
     date: "2021-2023",
     establishment: "AEGLO",
-    program: "Représentant génie logiciel",
+    program: "Rep. génie logiciel",
     description: "Représente les étudiants en GLO sur le CA de l'ASETIN"
   },
   {
