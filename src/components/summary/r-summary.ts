@@ -16,7 +16,7 @@ export class ResumeSummary extends LitElement {
   override render() {
     return html`
       <div>
-        Ma passion pour les nouvelles technologies ainsi que le souci de livrer du code de qualité tout en appliquant les bonnes
+        Ma passion pour les nouvelles technologies ainsi que mon souci de livrer du code de qualité tout en appliquant les bonnes
         pratiques font de moi un développeur polyvalent
       </div>
     `;

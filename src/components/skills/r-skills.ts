@@ -24,6 +24,7 @@ export class RSkills extends LitElement {
       margin-left: 8px; 
       font-size: 12px;
       font-weight: ${typography.weight.light};
+      color: ${palette.text.main};
     }
 
     @media only screen and (max-width: 800px) {

@@ -14,12 +14,12 @@ const educationItems = [
   {
     date: "2022-2023",
     establishment: "ASETIN",
-    program: "VP finissant",
+    program: "VP finissants",
     description: "Organisation des activités des finissants"
   },
   {
     program: "Loisirs et sports",
-    description: "Membre de l'équipe de basketball et volleyball collégial, activités de plein-air"
+    description: "Membre des équipes de basketball et volleyball collégiales; participation dans divers activités de plein-air"
   }
 ];
 
