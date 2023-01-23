@@ -89,8 +89,8 @@ const t=window,e=t.ShadowRoot&&(void 0===t.ShadyCSS||t.ShadyCSS.nativeShadow)&&"
   `,mt=gt([et("r-summary")],mt);var yt=function(t,e,i,s){var n,r=arguments.length,o=r<3?e:null===s?s=Object.getOwnPropertyDescriptor(e,i):s;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)o=Reflect.decorate(t,e,i,s);else for(var l=t.length-1;l>=0;l--)(n=t[l])&&(o=(r<3?n(o):r>3?n(e,i,o):n(e,i))||o);return r>3&&o&&Object.defineProperty(e,i,o),o};let $t=class extends X{constructor(){super(...arguments),this.last="false"}render(){return U`
       <li>
         ${"false"===this.last?U`<span class="line"></span>`:H}
-        <span class="bullet"></span>
         ${void 0===this.underDate||""===this.underDate?U`
+              <span class="bullet" style="width: 10px"></span>
               <div class="section" style="width: 100%; color: ${at.main}">
                 <div style="display: flex; justify-content: space-between">
                   <span class="timeline-description-title">${this.title}</span>
@@ -99,6 +99,7 @@ const t=window,e=t.ShadowRoot&&(void 0===t.ShadyCSS||t.ShadyCSS.nativeShadow)&&"
                 <span style="font-weight: ${ct.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
               </div>
             `:U`
+              <span class="bullet"></span>
               <div class="info">
                 <div class="section">
                   <span class="timeline-date-range">${this.date}</span>

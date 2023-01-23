@@ -81,9 +81,9 @@ export class RBulletPointItem extends LitElement {
     return html`
       <li>
         ${this.last === "false" ? html`<span class="line"></span>` : nothing}
-        <span class="bullet"></span>
         ${this.underDate === undefined || this.underDate === ""
           ? html`
+              <span class="bullet" style="width: 10px"></span>
               <div class="section" style="width: 100%; color: ${palette.text.main}">
                 <div style="display: flex; justify-content: space-between">
                   <span class="timeline-description-title">${this.title}</span>
@@ -93,6 +93,7 @@ export class RBulletPointItem extends LitElement {
               </div>
             `
           : html`
+              <span class="bullet"></span>
               <div class="info">
                 <div class="section">
                   <span class="timeline-date-range">${this.date}</span>
