@@ -9,13 +9,17 @@ const educationItems = [
     date: "2021-2023",
     establishment: "AEGLO",
     program: "Rep. génie logiciel",
-    description: "Représente les étudiants en GLO sur le CA de l'ASETIN"
+    description: "Représente les étudiants en génie logiciel sur le CA de l'ASETIN"
   },
   {
     date: "2022-2023",
     establishment: "ASETIN",
     program: "VP finissant",
-    description: "Organisations des activités des finissants"
+    description: "Organisation des activités des finissants"
+  },
+  {
+    program: "Loisirs et sports",
+    description: "Membre de l'équipe de basketball et volleyball collégial, activités de plein-air"
   }
 ];
 

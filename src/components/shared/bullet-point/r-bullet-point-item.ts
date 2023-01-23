@@ -82,14 +82,14 @@ export class RBulletPointItem extends LitElement {
       <li>
         ${this.last === "false" ? html`<span class="line"></span>` : nothing}
         <span class="bullet"></span>
-        ${this.underDate === undefined
+        ${this.underDate === undefined || this.underDate === ""
           ? html`
               <div class="section" style="width: 100%; color: ${palette.text.main}">
                 <div style="display: flex; justify-content: space-between">
                   <span class="timeline-description-title">${this.title}</span>
                   <span class="timeline-description-title">${this.date}</span>
                 </div>
-                <span style="font-weight: ${typography.weight.light}; text-align: start;">${this.subTitle}</span>
+                <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
               </div>
             `
           : html`
@@ -100,7 +100,7 @@ export class RBulletPointItem extends LitElement {
                 </div>
                 <div class="section right-part">
                   <span class="timeline-description-title">${this.title}</span>
-                  <span style="font-weight: ${typography.weight.light}; text-align: start;">${this.subTitle}</span>
+                  <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
                 </div>
               </div>
             `}

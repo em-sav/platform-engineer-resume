@@ -30,10 +30,11 @@ export class RApp extends LitElement {
     }
 
     .copyrights {
-      text-align: end;
+      font-size: 12px;
+      text-align: start;
       font-weight: ${typography.weight.light};
-      color: ${palette.text.main};
-      margin-top: -14px;
+      color: ${palette.text.secondary};
+      margin-top: -114px;
     }
 
     .split-container {
@@ -46,15 +47,25 @@ export class RApp extends LitElement {
     }
 
     .fit-column-skills {
-      margin-top: -420px;
+      margin-top: -330px;
     }
 
     .fit-column-awards {
-      margin-top: -70px;
+      margin-top: -320px;
     }
 
     .fit-column-implications {
-      margin-top: -210px;
+      margin-top: -70px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      .copyrights {
+        margin-top: -50px;
+      }
+      
+      .fit-column-awards {
+        margin-top: -192px;
+      }
     }
 
     @media only screen and (max-width: 600px) {
@@ -71,7 +82,9 @@ export class RApp extends LitElement {
       }
 
       .copyrights {
+        font-size: 16px;
         text-align: center;
+        margin-top: 40px;
       }
 
       .split-container {
@@ -87,11 +100,11 @@ export class RApp extends LitElement {
       }
 
       .fit-column-awards {
-        margin-top: 10px;
+        margin-top: -70px;
       }
 
       .fit-column-implications {
-        margin-top: -60px;
+        margin-top: 16px;
       }
     }
   `;
@@ -110,16 +123,19 @@ export class RApp extends LitElement {
         </div>
         <div class="split-container">
           <r-skills class="middle-spacing responsive fit-column-skills"></r-skills>
-          <r-awards class="responsive reduce-gap fit-column-awards"></r-awards>
+          <r-implications class="responsive reduce-gap fit-column-implications"></r-implications>
         </div>
         <div class="split-container">
-          <r-implications class="middle-spacing responsive reduce-gap fit-column-implications"></r-implications>
-          <div class="responsive copyrights">Copyright © ${currentYear} Émile Savard</div>
+          <r-awards class="middle-spacing responsive fit-column-awards"></r-awards>
+          <div class="responsive reduce-gap"></div>
         </div>
+          <div class="responsive copyrights">Copyright © ${currentYear} Émile Savard</div>         
       </div>
     `;
   }
 }
+
+// <div class="responsive copyrights">Copyright © ${currentYear} Émile Savard</div>
 
 declare global {
   interface HTMLElementTagNameMap {

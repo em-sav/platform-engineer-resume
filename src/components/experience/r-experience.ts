@@ -19,22 +19,16 @@ const experienceItems = [
     description: "Assurance vie et individuelle"
   },
   {
-    date: "Été 2020",
-    type: "Stage",
+    date: "2019-2022",
+    type: "Stage/temps partiel",
     title: "Développeur Powershell/PHP",
     description: "Sécurité informatique - GIA et SecOff"
-  },
-  {
-    date: "2019-2022",
-    type: "Temps partiel",
-    title: "Développeur Powershell/PHP",
-    description: "Sécurité informatique - GIA"
   },
   {
     date: "2017-2019",
     type: "Temps partiel",
     title: "Étudiant aux opérations TI",
-    description: "Centre de repographie"
+    description: "Centre de reprographie"
   }
 ];
 
@@ -71,7 +65,7 @@ export class RExperience extends LitElement {
   override render() {
     return html`
       <div class="container">
-        <r-section-title> Expérience </r-section-title>
+        <r-section-title> Expériences </r-section-title>
         <img src=${originPath() + "assets/beneva.png"} class="beneva-logo" height="40px" alt="beneva" />
         <div style="display: flex; align-items: start">
           <div class="container">

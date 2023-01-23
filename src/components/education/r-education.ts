@@ -48,7 +48,7 @@ export class REducation extends LitElement {
   override render() {
     return html`
       <div class="container">
-        <r-section-title> Éducation </r-section-title>
+        <r-section-title> Formation </r-section-title>
         <div style="display: flex; align-items: start">
           <div class="container">
             <ul>

@@ -4,11 +4,16 @@ import { map } from "lit/directives/map.js";
 import "../shared/bullet-point/r-bullet-point-item";
 import "../shared/r-section-title";
 
-const experienceItems = [
+const awardsItems = [
   {
     date: "2021",
     title: "Bourse d'excellence en science de l'informatique",
     description: "Ministre de l'enseignement supérieur du Québec"
+  },
+  {
+    date: "2021 et 2022",
+    title: "Bourse d'étude en TI",
+    description: "Beneva "
   }
 ];
 
@@ -46,10 +51,10 @@ export class RAwards extends LitElement {
           <div class="container">
             <ul>
               ${map(
-                experienceItems,
-                (item) =>
+                  awardsItems,
+                (item, index) =>
                   html`
-                    <r-bullet-point-item date=${item.date} title=${item.title} subTitle=${item.description} last=${true}>
+                    <r-bullet-point-item date=${item.date} title=${item.title} subTitle=${item.description} last=${index === awardsItems.length - 1}>
                     </r-bullet-point-item>
                   `
               )}
