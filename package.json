@@ -19,7 +19,7 @@
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
     "docs": "npm run clean && npm run docs:clean && npm run build && npm run docs:build && npm run dist:clean",
     "docs:clean": "rimraf docs",
-    "docs:build": "rollup -c rollup.config.js",
+    "docs:build": "rollup -c rollup.config.js --context 'this'",
     "docs:serve": "wds --root-dir=docs --node-resolve --watch",
     "dist:clean": "rimraf dist",
     "analyze": "cem analyze --litelement --globs \"src/**/*.ts\"",
@@ -31,7 +31,7 @@
     "test:watch": "wtr --watch",
     "test:prod": "MODE=prod wtr",
     "test:prod:watch": "MODE=prod wtr --watch",
-    "checksize": "rollup -c ; cat my-element.bundled.js | gzip -9 | wc -c ; rm my-element.bundled.js"
+    "rollup": "rollup -c"
   },
   "keywords": [
     "web-components",
@@ -42,21 +42,24 @@
   "author": "Émile Savard",
   "license": "MIT Liscence",
   "dependencies": {
-    "lit": "^2.2.4"
+    "lit": "^3.2.1"
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.6.3",
-    "@open-wc/building-rollup": "^2.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
-    "@web/dev-server": "^0.1.31",
-    "deepmerge": "^4.2.2",
-    "eslint": "^8.15.0",
-    "lit-analyzer": "^1.2.1",
-    "prettier": "^2.6.2",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.79.1",
-    "rollup-plugin-copy": "^3.4.0",
-    "typescript": "~4.7.4"
+    "@custom-elements-manifest/analyzer": "^0.10.4",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "@web/dev-server": "^0.4.6",
+    "@web/rollup-plugin-copy": "^0.5.1",
+    "@web/rollup-plugin-html": "^2.3.0",
+    "eslint": "^9.19.0",
+    "lit-analyzer": "^2.0.3",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.32.1",
+    "tslib": "^2.8.1",
+    "typescript": "~5.7.3"
   }
 }
