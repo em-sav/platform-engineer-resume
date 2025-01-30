@@ -10,28 +10,16 @@
     "src/"
   ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "clean": "rimraf target",
-    "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
-    "lint:eslint": "eslint 'src/**/*.ts'",
-    "lint:lit-analyzer": "lit-analyzer",
+    "dev": "npm-run-all --parallel build:watch server:watch",
+    "docs": "npm run target:clean && npm run docs:clean && npm run target:build && npm run docs:build",
     "format": "prettier \"**/*.{cjs,html,js,json,md,ts}\" --write",
-    "docs": "npm run clean && npm run docs:clean && npm run build && npm run docs:build && npm run dist:clean",
+    "target:build": "tsc",
+    "target:clean": "rimraf target",
     "docs:clean": "rimraf docs",
-    "docs:build": "rollup -c rollup.config.js --context 'this'",
-    "docs:serve": "wds --root-dir=docs --node-resolve --watch",
-    "dist:clean": "rimraf dist",
-    "analyze": "cem analyze --litelement --globs \"src/**/*.ts\"",
-    "analyze:watch": "cem analyze --litelement --globs \"src/**/*.ts\" --watch",
-    "serve": "wds --watch",
-    "serve:prod": "MODE=prod npm run serve",
-    "test": "npm run test:dev && npm run test:prod",
-    "test:dev": "wtr",
-    "test:watch": "wtr --watch",
-    "test:prod": "MODE=prod wtr",
-    "test:prod:watch": "MODE=prod wtr --watch",
-    "rollup": "rollup -c"
+    "docs:build": "tsc && rollup -c rollup.config.js --context 'this'",
+    "build:watch": "tsc --watch",
+    "server:watch": "wds --watch",
+    "lint:lit-analyzer": "lit-analyzer"
   },
   "keywords": [
     "web-components",
@@ -45,21 +33,16 @@
     "lit": "^3.2.1"
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.10.4",
     "@rollup/plugin-node-resolve": "^16.0.0",
-    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
     "@web/dev-server": "^0.4.6",
     "@web/rollup-plugin-copy": "^0.5.1",
     "@web/rollup-plugin-html": "^2.3.0",
-    "eslint": "^9.19.0",
     "lit-analyzer": "^2.0.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
     "rollup": "^4.32.1",
-    "tslib": "^2.8.1",
     "typescript": "~5.7.3"
   }
 }
