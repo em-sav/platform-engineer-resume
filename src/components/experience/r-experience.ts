@@ -5,24 +5,27 @@ import "../shared/bullet-point/r-bullet-point-item";
 import "../shared/r-section-title";
 import { originPath } from "../../global/config";
 
-const experienceItems = [
+
+const benevaExperiences = [
   {
-    date: "2022-présent",
-    type: "Temps partiel",
-    title: "DevOps",
-    description: "Soutien à la livraison des développeurs"
+    date: "2023-présent",
+    type: "Temps plein",
+    title: "Ingénieur Platforme",
+    description: "Platforme et DevEx pour l'appli. <b>FibeTV</b> / Crave",
+    image: originPath() + "assets/bell.png"
   },
   {
-    date: "Été 2021",
-    type: "Stage",
-    title: "Développeur Java/Cobol",
-    description: "Assurance vie et individuelle"
+    date: "2022-2023",
+    type: "Temps partiel",
+    title: "DevOps",
+    description: "Soutien à la livraison des développeurs",
+    image: originPath() + "assets/beneva.png"
   },
   {
     date: "2019-2022",
     type: "Stage/temps partiel",
-    title: "Développeur Powershell/PHP",
-    description: "Sécurité informatique - GIA et SecOff"
+    title: "Développeur Logiciel",
+    description: "Sécurité informatique et aussurance individuelle"
   },
   {
     date: "2017-2019",
@@ -66,12 +69,11 @@ export class RExperience extends LitElement {
     return html`
       <div class="container">
         <r-section-title> Expériences </r-section-title>
-        <img src=${originPath() + "assets/beneva.png"} class="beneva-logo" height="40px" alt="beneva" />
-        <div style="display: flex; align-items: start">
+        <div style="display: flex; align-items: start; padding-top: 42px">
           <div class="container">
             <ul>
               ${map(
-                experienceItems,
+                benevaExperiences,
                 (item, index) =>
                   html`
                     <r-bullet-point-item
@@ -79,7 +81,8 @@ export class RExperience extends LitElement {
                       underDate=${item.type}
                       title=${item.title}
                       subTitle=${item.description}
-                      last=${index === experienceItems.length - 1}
+                      last=${index === benevaExperiences.length - 1}
+                      image=${item.image}
                     >
                     </r-bullet-point-item>
                   `

@@ -6,13 +6,13 @@ import "../shared/r-section-title";
 
 const awardsItems = [
   {
-    date: "2021",
-    title: "Bourse d'excellence en science de l'informatique",
-    description: "Ministre de l'enseignement supérieur du Québec"
+    date: "2023 et 2024",
+    title: "Bourses excellence et innovation",
+    description: "Bell"
   },
   {
     date: "2021 et 2022",
-    title: "Bourse d'étude en TI",
+    title: "Bourses d'étude en TI",
     description: "Beneva "
   }
 ];

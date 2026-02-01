@@ -1,5 +1,6 @@
 import { css, html, LitElement, nothing } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import { unsafeHTML } from "lit/directives/unsafe-html.js";
 import { palette, typography } from "../../../global/theme";
 
 @customElement("r-bullet-point-item")
@@ -44,6 +45,7 @@ export class RBulletPointItem extends LitElement {
 
     .info {
       display: flex;
+      width: 100%;
       justify-content: space-between;
       flex: 1;
       color: ${palette.text.main};
@@ -60,6 +62,32 @@ export class RBulletPointItem extends LitElement {
     .timeline-description-title {
       font-weight: ${typography.weight.bolder};
     }
+
+    .section-with-image {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section-image {
+      max-height: 28px;
+      object-fit: contain;
+      margin-left: -16px;
+      margin-top: -56px;
+      padding-bottom: 28px;
+    }
+
+    .section-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    b,
+    strong {
+      font-weight: 800;
+    }
   `;
 
   @property()
@@ -67,6 +95,9 @@ export class RBulletPointItem extends LitElement {
 
   @property()
   underDate!: string;
+
+  @property()
+  image!: string;
 
   @property()
   override title!: string;
@@ -89,19 +120,22 @@ export class RBulletPointItem extends LitElement {
                   <span class="timeline-description-title">${this.title}</span>
                   <span class="timeline-description-title">${this.date}</span>
                 </div>
-                <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
+                <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${unsafeHTML(this.subTitle)}</span>
               </div>
             `
           : html`
-              <span class="bullet"></span>
-              <div class="info">
-                <div class="section">
-                  <span class="timeline-date-range">${this.date}</span>
-                  <span style="font-weight: ${typography.weight.normal}">${this.underDate}</span>
-                </div>
-                <div class="section right-part">
-                  <span class="timeline-description-title">${this.title}</span>
-                  <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
+              <span class="bullet" style="width: 10px"></span>
+              <div class="section-container">
+                ${this.image ? html`<img class="section-image" src="${this.image}" alt="" />` : nothing}
+                <div class="info">
+                  <div class="section section-with-image">
+                    <span class="timeline-date-range">${this.date}</span>
+                    <span style="font-weight: ${typography.weight.normal}">${this.underDate}</span>
+                  </div>
+                  <div class="section right-part">
+                    <span class="timeline-description-title">${this.title}</span>
+                    <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${unsafeHTML(this.subTitle)}</span>
+                  </div>
                 </div>
               </div>
             `}

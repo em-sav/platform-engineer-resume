@@ -44,7 +44,7 @@ export class RTitle extends LitElement {
             <header class="header-container">
                 <div class="flex-space-between">
                     <h1 class="title-fit">Émile Savard</h1>
-                    <h3 class="title-fit"">Développeur Logiciel</h3>
+                    <h3 class="title-fit"">Ingénieur Platforme</h3>
                 </div>
                 <hr > 
             </header>
