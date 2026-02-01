@@ -11,7 +11,7 @@ const benevaExperiences = [
     date: "2023-présent",
     type: "Temps plein",
     title: "Ingénieur Platforme",
-    description: "Platforme et DevEx pour FibeTV / Crave",
+    description: "Platforme et DevEx pour l'appli. <b>FibeTV</b> / Crave",
     image: originPath() + "assets/bell.png"
   },
   {

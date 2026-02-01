@@ -1,5 +1,6 @@
 import { css, html, LitElement, nothing } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import { unsafeHTML } from "lit/directives/unsafe-html.js";
 import { palette, typography } from "../../../global/theme";
 
 @customElement("r-bullet-point-item")
@@ -82,6 +83,11 @@ export class RBulletPointItem extends LitElement {
       align-items: flex-start;
       width: 100%;
     }
+
+    b,
+    strong {
+      font-weight: 800;
+    }
   `;
 
   @property()
@@ -114,7 +120,7 @@ export class RBulletPointItem extends LitElement {
                   <span class="timeline-description-title">${this.title}</span>
                   <span class="timeline-description-title">${this.date}</span>
                 </div>
-                <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
+                <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${unsafeHTML(this.subTitle)}</span>
               </div>
             `
           : html`
@@ -128,7 +134,7 @@ export class RBulletPointItem extends LitElement {
                   </div>
                   <div class="section right-part">
                     <span class="timeline-description-title">${this.title}</span>
-                    <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${this.subTitle}</span>
+                    <span style="font-weight: ${typography.weight.light}; text-align: start; font-size: 14px">${unsafeHTML(this.subTitle)}</span>
                   </div>
                 </div>
               </div>
