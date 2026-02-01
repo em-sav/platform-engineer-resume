@@ -13,6 +13,14 @@
       rel="stylesheet"
     />
     <script type="module" src="target/src/r-app.js"></script>
+    <style>
+        @media print {
+            @page {
+              size: letter;
+              margin: 0;
+            }
+        }
+    </style>
   </head>
   <body>
     <r-app />
